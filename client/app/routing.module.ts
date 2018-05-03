@@ -1,4 +1,4 @@
-import { HomeComponent } from './home/home.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -13,6 +13,9 @@ import { TeamsComponent } from './teams/teams.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
+import { HomeComponent } from './home/home.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   // Private Routes
@@ -23,6 +26,8 @@ const routes: Routes = [
   { path: 'logout', component: LogoutComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'carousel', component: CarouselComponent },
+  { path: 'menu', component: MenuComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
 
   // Public Routes

@@ -9,7 +9,7 @@ const scoreSchema = new mongoose.Schema({
   projectDay2: String,
   scoreDay3: Number,
   projectDay3: String,
-  status: Boolean,
+  status: String,
 });
 const scoreModel = mongoose.model('score', scoreSchema);
 

@@ -40,7 +40,10 @@
               <input class="form-control mr-2" type="text" name="name" [(ngModel)]="team.name" placeholder="Name" required>
               <input class="form-control mr-2" type="text" name="country" [(ngModel)]="team.country" placeholder="Country" required>
               <input class="form-control mr-2" type="text" name="school" [(ngModel)]="team.school" placeholder="School" required>
-              <input class="form-control mr-2" type="text" name="members" [(ngModel)]="team.members" placeholder="Members" required>
+              <input class="form-control mr-2" type="text" name="members1" [(ngModel)]="team.members[0]" placeholder="Member 1" required>
+              <input class="form-control mr-2" type="text" name="members2" [(ngModel)]="team.members[1]" placeholder="Member 2" required>
+              <input class="form-control mr-2" type="text" name="members3" [(ngModel)]="team.members[2]" placeholder="Member 3" required>
+              <input class="form-control mr-2" type="text" name="members4" [(ngModel)]="team.members[3]" placeholder="Member 4" required>
               <button class="btn btn-sm btn-primary mr-2" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
               <button class="btn btn-sm btn-warning" (click)="cancelEditing()"><i class="fa fa-times"></i> Cancel</button>
             </form>
@@ -58,10 +61,12 @@
       <input class="form-control mr-2" type="text" name="name" formControlName="name" placeholder="Name">
       <input class="form-control mr-2" type="text" name="country" formControlName="country" placeholder="Country">
       <input class="form-control mr-2" type="text" name="school" formControlName="school" placeholder="School">
-      <input class="form-control mr-2" type="text" name="members1" formControlName="members1" placeholder="Members">
-      <input class="form-control mr-2" type="text" name="members2" formControlName="members2" placeholder="Members">
-      <input class="form-control mr-2" type="text" name="members3" formControlName="members3" placeholder="Members">
-      <input class="form-control mr-2" type="text" name="members4" formControlName="members4" placeholder="Members">
+      <div>
+      <p><input class="form-control mr-2" type="text" name="members1" formControlName="members1" placeholder="Member 1">
+      <input class="form-control mr-2" type="text" name="members2" formControlName="members2" placeholder="Member 2"></p>
+      <p><input class="form-control mr-2" type="text" name="members3" formControlName="members3" placeholder="Member 3">
+      <input class="form-control mr-2" type="text" name="members4" formControlName="members4" placeholder="Member 4"></p>
+    </div>
       <button class="btn btn-primary" type="submit" [disabled]="!addTeamForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
     </form>
   </div>

@@ -14,6 +14,8 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
 import { HomeComponent } from './home/home.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   // Private Routes
@@ -25,10 +27,12 @@ const routes: Routes = [
   { path: 'logout', component: LogoutComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'carousel', component: CarouselComponent },
+  { path: 'menu', component: MenuComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
 
   // Public Routes
-  { path: '', component: AboutComponent },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'notfound', component: NotFoundComponent },
   { path: '**', redirectTo: '/notfound' },

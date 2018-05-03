@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators, FormArray } from '@angular/forms';
 
 import { TeamService } from '../services/team.service';
 import { ToastComponent } from '../shared/toast/toast.component';
@@ -21,7 +21,11 @@ export class TeamsComponent implements OnInit {
   name = new FormControl('', Validators.required);
   country = new FormControl('', Validators.required);
   school = new FormControl('', Validators.required);
-  members = new FormControl('', Validators.required);
+  members1 = new FormControl('', Validators.required);
+  members2 = new FormControl('', Validators.required);
+  members3 = new FormControl('', Validators.required);
+  members4 = new FormControl('', Validators.required);
+
 
   constructor(private teamService: TeamService,
               private formBuilder: FormBuilder,
@@ -33,7 +37,10 @@ export class TeamsComponent implements OnInit {
       name: this.name,
       country: this.country,
       school: this.school,
-      members: this.members,
+      members1: this.members1,
+      members2: this.members2,
+      members3: this.members3,
+      members4: this.members4,
     });
   }
 
@@ -46,6 +53,22 @@ export class TeamsComponent implements OnInit {
   }
 
   addTeam() {
+    const team = new Team();
+    team.name = this.addTeamForm.value.name;
+    team.country = this.addTeamForm.value.country;
+    team.school = this.addTeamForm.value.school;
+    team.members = [
+      this.addTeamForm.value.members1,
+      this.addTeamForm.value.members2,
+      this.addTeamForm.value.members3,
+      this.addTeamForm.value.members4,
+    ];
+
+    this.addTeamForm.value.name = team.name;
+    this.addTeamForm.value.country = team.country;
+    this.addTeamForm.value.school = team.school;
+    this.addTeamForm.value.members = team.members;
+
     this.teamService.addTeam(this.addTeamForm.value).subscribe(
       (res) => {
         this.teams.push(res);

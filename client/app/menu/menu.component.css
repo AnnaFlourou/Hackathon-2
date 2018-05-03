@@ -6,9 +6,11 @@
     position: absolute;
     top: 0;
 }
+
 .invisible {
     display: none;
 }
+
 .but1 {
     width: 100%;
 }

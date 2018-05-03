@@ -27,6 +27,8 @@ import { ScoreService } from './services/score.service';
 import { TeamsListsComponent } from './teams-lists/teams-lists.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { OrganizerComponent } from './organizer/organizer.component';
+import { ProgramComponent } from './program/program.component';
+import { ResultsComponent } from './results/results.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -51,7 +53,9 @@ export function tokenGetter() {
     ScoringAdminComponent,
     TeamsListsComponent,
     SponsorComponent,
-    OrganizerComponent
+    OrganizerComponent,
+    ProgramComponent,
+    ResultsComponent,
   ],
   imports: [
     RoutingModule,

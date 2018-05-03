@@ -17,8 +17,8 @@ import { AuthGuardAdmin } from './services/auth-guard-admin.service';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
-
-
+import { ProgramComponent } from './program/program.component';
+import { ResultsComponent } from './results/results.component';
 
 const routes: Routes = [
   // Private Routes
@@ -28,6 +28,8 @@ const routes: Routes = [
   { path: 'score-admin', component: ScoringAdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },
+  { path: 'program', component: ProgramComponent },
+  { path: 'results', component: ResultsComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
 
   // Public Routes

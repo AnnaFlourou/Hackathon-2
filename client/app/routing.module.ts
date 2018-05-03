@@ -10,18 +10,27 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
+import { TeamsComponent } from './teams/teams.component';
+import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'cats', component: CatsComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'logout', component: LogoutComponent },
-  { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
+  // Private Routes
+  { path: 'homeAdmin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
+  { path: 'cats', component: CatsComponent },
+  { path: 'teams', component: TeamsComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'logout', component: LogoutComponent },
+  { path: 'logout', component: LogoutComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
+
+  // Public Routes
+  { path: '', component: AboutComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'notfound', component: NotFoundComponent },
   { path: '**', redirectTo: '/notfound' },
 ];
@@ -31,4 +40,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 
-export class RoutingModule {}
+export class RoutingModule { }

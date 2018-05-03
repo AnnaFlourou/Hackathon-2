@@ -24,6 +24,9 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { ScoringAdminComponent } from './scoring-admin/scoring-admin.component';
 import { ScoreService } from './services/score.service';
+import { TeamsListsComponent } from './teams-lists/teams-lists.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
+import { OrganizerComponent } from './organizer/organizer.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -46,6 +49,9 @@ export function tokenGetter() {
     NavbarAdminComponent,
     HomeAdminComponent,
     ScoringAdminComponent,
+    TeamsListsComponent,
+    SponsorComponent,
+    OrganizerComponent
   ],
   imports: [
     RoutingModule,

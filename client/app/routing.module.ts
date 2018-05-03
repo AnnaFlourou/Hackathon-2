@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
 
   // Public Routes
-  { path: '', component: AboutComponent },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'notfound', component: NotFoundComponent },
   { path: '**', redirectTo: '/notfound' },

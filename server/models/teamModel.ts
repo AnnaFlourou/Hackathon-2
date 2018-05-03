@@ -7,12 +7,12 @@ const teamSchema = new mongoose.Schema({
   school: String,
   members: [],
   scoreDay1: Number,
-  scoreDay2: Number,
-  scoreDay3: Number,
-  status: Boolean,
   projectDay1: String,
+  scoreDay2: Number,
   projectDay2: String,
+  scoreDay3: Number,
   projectDay3: String,
+  status: Boolean,
 });
 const teamModel = mongoose.model('team', teamSchema);
 

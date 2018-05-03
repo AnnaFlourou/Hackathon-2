@@ -1,3 +1,5 @@
+import { Router, RouterModule, Routes } from '@angular/router';
+import { NavbarAdminComponent } from './../navbar-admin/navbar-admin.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,23 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  position = 'closed';
+  position = 'open';
   buttonMenu = 'but0';
   menu = 'invisible';
-  constructor() { }
+  route;
+  constructor(private router: Router) {}
 
   ngOnInit() {
   }
   pos() {
-    if (this.position == 'closed') {
-      this.position = 'open';
+    if (this.position == 'open') {
+      this.position = 'closed';
       this.buttonMenu = 'but1';
       this.menu = 'visible';
     } else {
-      this.position = 'closed';
+      this.position = 'open';
       this.buttonMenu = 'but0';
       this.menu = 'invisible';
     }
-    console.log(this.position);
+  }
+  click(route) {
+    this.router.navigate([route]);
+    this.pos();
   }
 }

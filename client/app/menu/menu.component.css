@@ -16,3 +16,8 @@
 .but1 {
     width: 100%;
 }
+
+.linker:hover {
+    cursor: pointer;
+    color: #00f;
+}

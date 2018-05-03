@@ -22,6 +22,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { TeamService } from './services/team.service';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
+import { ScoringAdminComponent } from './scoring-admin/scoring-admin.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -43,6 +44,7 @@ export function tokenGetter() {
     TeamsComponent,
     NavbarAdminComponent,
     HomeAdminComponent,
+    ScoringAdminComponent,
   ],
   imports: [
     RoutingModule,

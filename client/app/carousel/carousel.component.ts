@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  click() {
+  this.router.navigate(['about']);
+  }
 }

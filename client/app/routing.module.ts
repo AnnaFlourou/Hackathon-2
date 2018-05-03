@@ -2,7 +2,6 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CatsComponent } from './cats/cats.component';
 import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -19,7 +18,6 @@ const routes: Routes = [
   // Private Routes
   { path: 'homeAdmin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
-  { path: 'cats', component: CatsComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },

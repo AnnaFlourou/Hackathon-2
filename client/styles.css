@@ -6,3 +6,6 @@ body {
   padding: unset;
   margin: unset;
 }
+.fontDefault {
+  font-family: 'PT Serif', serif;
+}

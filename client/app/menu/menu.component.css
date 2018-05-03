@@ -15,9 +15,41 @@
 
 .but1 {
     width: 100%;
+    background-image:
+    radial-gradient(
+      circle,
+      rgb(204, 176, 160),
+      rgb(161, 108, 77)
+    );
+    color: white;
 }
 
-.linker:hover {
+.but0 {
+    background-image:
+    radial-gradient(
+      circle,
+      rgb(204, 176, 160),
+      rgb(161, 108, 77)
+    );
+    color: white;
+    }
+
+    .linker:hover {
     cursor: pointer;
-    color: #00f;
+    color: rgb(0, 183, 255);
 }
+
+.card-header {
+    background-image:
+    radial-gradient(
+      circle,
+    white,
+    rgb(133, 245, 133)
+    )
+    
+}
+
+.btn-link:hover {
+text-decoration: none !important;
+}
+

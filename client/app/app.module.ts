@@ -20,6 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
+import { TeamsComponent } from './teams/teams.component';
+import { TeamService } from './services/team.service';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -39,6 +41,7 @@ export function tokenGetter() {
     HomeComponent,
     CarouselComponent,
     MenuComponent,
+    TeamsComponent,
   ],
   imports: [
     RoutingModule,
@@ -56,6 +59,7 @@ export function tokenGetter() {
     AuthGuardAdmin,
     CatService,
     UserService,
+    TeamService,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],

@@ -2,6 +2,7 @@ import * as express from 'express';
 
 import CatController from './controllers/CatController';
 import UserController from './controllers/UserController';
+import TeamController from './controllers/TeamController';
 // import cat from './models/cat';
 // import user from './models/user';
 
@@ -11,6 +12,15 @@ export default function routes(app) {
 
   const cat = new CatController();
   const user = new UserController();
+  const team = new TeamController();
+
+  // teams
+  router.route('/teams').get(team.getAll);
+  router.route('/teams/count').get(team.count);
+  router.route('/team').post(team.insert);
+  router.route('/team/:id').get(team.get);
+  router.route('/team/:id').put(team.update);
+  router.route('/team/:id').delete(team.delete);
 
   // cats
   router.route('/cats').get(cat.getAll);

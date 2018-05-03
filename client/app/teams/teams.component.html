@@ -28,7 +28,7 @@
           <td>{{ team.school }}</td>
           <td>{{ team.members }}</td>
           <td>
-            <button class="btn btn-sm btn-primary" (click)="enableEditing(team)"><i class="fa fa-pencil"></i> Edit</button> 
+            <button class="btn btn-sm btn-success" (click)="enableEditing(team)"><i class="fa fa-pencil"></i> Edit</button> 
             <button class="btn btn-sm btn-danger" (click)="deleteTeam(team)"><i class="fa fa-trash"></i> Delete</button>
           </td>
         </tr>  
@@ -44,7 +44,7 @@
               <input class="form-control mr-2" type="text" name="members2" [(ngModel)]="team.members[1]" placeholder="Member 2" required>
               <input class="form-control mr-2" type="text" name="members3" [(ngModel)]="team.members[2]" placeholder="Member 3" required>
               <input class="form-control mr-2" type="text" name="members4" [(ngModel)]="team.members[3]" placeholder="Member 4" required>
-              <button class="btn btn-sm btn-primary mr-2" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
+              <button class="btn btn-sm btn-success mr-2" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
               <button class="btn btn-sm btn-warning" (click)="cancelEditing()"><i class="fa fa-times"></i> Cancel</button>
             </form>
           </td>
@@ -67,7 +67,7 @@
       <p><input class="form-control mr-2" type="text" name="members3" formControlName="members3" placeholder="Member 3">
       <input class="form-control mr-2" type="text" name="members4" formControlName="members4" placeholder="Member 4"></p>
     </div>
-      <button class="btn btn-primary" type="submit" [disabled]="!addTeamForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
+      <button class="btn btn-success" type="submit" [disabled]="!addTeamForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
     </form>
   </div>
 </div>

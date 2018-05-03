@@ -1,3 +1,83 @@
-<p>
-  menu works!
-</p>
+<div class='nav-menu'>
+
+  <button (click)='pos()' class='{{ buttonMenu }}'>{{ position }}</button>
+
+  <div id="accordion" class='{{ menu }}'>
+    <div class="card">
+      <div class="collapse show">
+        <div class="card-body">
+          <p>
+            <a>Home</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Dev Contest
+          </button>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <p>
+            <a>About</a>
+          </p>
+          <p>
+            <a>Program</a>
+          </p>
+          <p>
+            <a>Result</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Teams dev
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          <p>
+            <a>Teams</a>
+          </p>
+          <p>
+            <a>Organizer</a>
+          </p>
+          <p>
+            <a>Sponsor</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              social networks
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          
+            <a>Facebook</a>
+
+            <a>LinkedIn</a>
+            
+            <a>Youtube</a>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

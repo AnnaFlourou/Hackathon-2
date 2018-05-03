@@ -4,5 +4,6 @@ export class Team {
   country: string;
   school: string;
   members: string[];
+  flag: string;
 }
 

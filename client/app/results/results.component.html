@@ -1,4 +1,46 @@
 <app-menu></app-menu>
-<div style="text-align: center">
-  <h1>Tech your Futur</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div style="text-align: center">
+        <h1>Tech your Futur</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-4">
+          <table class="scoreTable">
+              <tr>
+                  <th>Day 1</th>
+              </tr>
+              <tr *ngFor="let score of scores">
+                  <td>{{ score.name }}</td>
+                  <td>{{ score.scoreDay1 }}</td>
+              </tr>
+          </table>
+      </div>
+      <div class="col-4">
+          <table class="scoreTable">
+              <tr>
+                  <th>Day 2</th>
+              </tr>
+              <tr *ngFor="let score of scores">
+                  <td>{{ score.name }}</td>
+                  <td>{{ score.scoreDay2 }}</td>
+              </tr>
+          </table>
+      </div>
+      <div class="col-4">
+          <table class="scoreTable">
+              <tr>
+                  <th>Day 3</th>
+              </tr>
+              <tr *ngFor="let score of scores">
+                  <td>{{ score.name }}</td>
+                  <td>{{ score.scoreDay3 }}</td>
+              </tr>
+          </table>
+      </div>
+  </div>
 </div>

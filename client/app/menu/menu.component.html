@@ -1,13 +1,13 @@
 <div class='nav-menu'>
 
-  <button (click)='pos()' class='{{ buttonMenu }}'>{{ position }}</button>
+  <button (click)='pos()' class='linker {{ buttonMenu }}'>{{ position }}</button>
 
   <div id="accordion" class='{{ menu }}'>
     <div class="card">
       <div class="collapse show">
         <div class="card-body">
-          <p>
-            <a>Home</a>
+          <p class='linker'>
+            <a (click)='click("")'>Home</a>
           </p>
         </div>
       </div>
@@ -22,14 +22,14 @@
       </div>
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
         <div class="card-body">
-          <p>
-            <a>About</a>
+          <p class='linker'>
+            <a (click)='click("about")'>About</a>
           </p>
-          <p>
-            <a>Program</a>
+          <p class='linker'>
+            <a (click)='click("")'>Program</a>
           </p>
-          <p>
-            <a>Result</a>
+          <p class='linker'>
+            <a (click)='click("")'>Result</a>
           </p>
         </div>
       </div>
@@ -45,14 +45,14 @@
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
         <div class="card-body">
-          <p>
-            <a>Teams</a>
+          <p class='linker'>
+            <a (click)='click("")'>Teams</a>
           </p>
-          <p>
-            <a>Organizer</a>
+          <p class='linker'>
+            <a (click)='click("")'>Organizer</a>
           </p>
-          <p>
-            <a>Sponsor</a>
+          <p class='linker'>
+            <a (click)='click("")'>Sponsor</a>
           </p>
         </div>
       </div>

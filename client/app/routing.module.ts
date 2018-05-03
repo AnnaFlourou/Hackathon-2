@@ -13,9 +13,10 @@ import { TeamsComponent } from './teams/teams.component';
 
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: AboutComponent },
+  { path: '', component: HomeComponent },
   { path: 'cats', component: CatsComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'register', component: RegisterComponent },

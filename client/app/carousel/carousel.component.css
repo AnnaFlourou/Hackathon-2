@@ -1,0 +1,47 @@
+.title {
+  position: relative;
+}
+
+.p {
+  z-index: 101;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+  top: 50px;
+}
+
+.tewt {
+  z-index: 101;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+  top: 0px;
+}
+
+.about {
+  z-index: 101;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid;
+  text-align: center;
+  top: 100px;
+}
+
+.widthCarousel {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.heightImg {
+  height: 100vh;
+  width: auto;
+}

@@ -1,0 +1,65 @@
+<app-navbar-admin></app-navbar-admin>
+
+<app-loading [condition]="isLoading"></app-loading>
+
+<app-toast [message]="toast.message"></app-toast>
+
+<div class="card mb-3" *ngIf="!isLoading">
+  <h4 class="card-header">Current teams Score ({{ scores.length }})</h4>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Country</th>
+          <th scope="col">School</th>
+          <th scope="col">Members</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="scores.length === 0">
+        <tr>
+          <td colspan="4">There are no teams in the DB. Add a new team below.</td>
+        </tr>  
+      </tbody>
+      <tbody *ngIf="!isEditing">
+        <tr *ngFor="let score of scores">
+          <td>{{ score.name }}</td>
+          <td>{{ score.country }}</td>
+          <td>{{ score.school }}</td>
+          <td>{{ score.members }}</td>
+          <td>
+            <button class="btn btn-sm btn-primary" (click)="enableEditing(score)"><i class="fa fa-pencil"></i> Edit</button> 
+            <button class="btn btn-sm btn-danger" (click)="deleteScore(score)"><i class="fa fa-trash"></i> Delete</button>
+          </td>
+        </tr>  
+      </tbody>
+      <tbody *ngIf="isEditing">
+        <tr>
+          <td colspan="4">
+            <form class="form-inline" #form="ngForm" (ngSubmit)="editScore(score)">
+              <input class="form-control mr-2" type="text" name="name" [(ngModel)]="score.name" placeholder="Name" required>
+              <input class="form-control mr-2" type="text" name="country" [(ngModel)]="score.country" placeholder="Country" required>
+              <input class="form-control mr-2" type="text" name="school" [(ngModel)]="score.school" placeholder="School" required>
+              <input class="form-control mr-2" type="text" name="members" [(ngModel)]="score.members" placeholder="Members" required>
+              <button class="btn btn-sm btn-primary mr-2" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
+              <button class="btn btn-sm btn-warning" (click)="cancelEditing()"><i class="fa fa-times"></i> Cancel</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card" *ngIf="!isEditing">
+  <h4 class="card-header">Add new score</h4>
+  <div class="card-body">
+    <form class="form-inline" [formGroup]="addScoreForm" (ngSubmit)="addScore()">
+      <input class="form-control mr-2" type="text" name="name" formControlName="name" placeholder="Name">
+      <input class="form-control mr-2" type="text" name="country" formControlName="country" placeholder="Country">
+      <input class="form-control mr-2" type="text" name="school" formControlName="school" placeholder="School">
+      <input class="form-control mr-2" type="text" name="members" formControlName="members" placeholder="Members">
+      <button class="btn btn-primary" type="submit" [disabled]="!addScoreForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
+    </form>
+  </div>
+</div>

@@ -23,6 +23,7 @@ import { TeamService } from './services/team.service';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { ScoringAdminComponent } from './scoring-admin/scoring-admin.component';
+import { ScoreService } from './services/score.service';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -62,6 +63,7 @@ export function tokenGetter() {
     AuthGuardAdmin,
     UserService,
     TeamService,
+    ScoreService,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],

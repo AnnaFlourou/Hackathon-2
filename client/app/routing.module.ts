@@ -1,3 +1,6 @@
+import { OrganizerComponent } from './organizer/organizer.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
+import { TeamsListsComponent } from './teams-lists/teams-lists.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -32,12 +35,15 @@ const routes: Routes = [
 
   // Public Routes
   { path: '', component: HomeComponent },
+  { path: 'teamsLists', component: TeamsListsComponent },
+  { path: 'sponsor', component: SponsorComponent },
+  { path: 'organizer', component: OrganizerComponent },
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   { path: 'carousel', component: CarouselComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'notfound', component: NotFoundComponent },
-  { path: '**', redirectTo: '/notfound' },
+  { path: '**', redirectTo: '/notfound' }
 ];
 
 @NgModule({

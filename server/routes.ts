@@ -2,6 +2,7 @@ import * as express from 'express';
 
 import UserController from './controllers/UserController';
 import TeamController from './controllers/TeamController';
+import ScoreController from './controllers/ScoreController';
 // import cat from './models/cat';
 // import user from './models/user';
 
@@ -11,6 +12,15 @@ export default function routes(app) {
 
   const user = new UserController();
   const team = new TeamController();
+  const score = new ScoreController();
+
+  // score
+  router.route('/scores').get(score.getAll);
+  router.route('/scores/count').get(score.count);
+  router.route('/score').post(score.insert);
+  router.route('/score/:id').get(score.get);
+  router.route('/score/:id').put(score.update);
+  router.route('/score/:id').delete(score.delete);
 
   // teams
   router.route('/teams').get(team.getAll);

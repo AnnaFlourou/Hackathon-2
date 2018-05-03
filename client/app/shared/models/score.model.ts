@@ -1,4 +1,4 @@
-export class Team {
+export class Score {
   _id?: string;
   name: String;
   country: String;
@@ -12,4 +12,5 @@ export class Team {
   projectDay2: String;
   projectDay3: String;
 }
+
 

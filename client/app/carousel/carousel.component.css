@@ -14,6 +14,8 @@
   top: 255px;
   font-size: 3rem;
   text-align: center;
+  color: #bbffe5;
+  text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black, 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black;
 }
 
 .tewt {
@@ -24,7 +26,7 @@
   width: 100%;
   text-align: center;
   top: 0px;
-  color: /*rgb(113, 248, 248)*/ yellow;
+  color: /*rgb(113, 248, 248)*/ goldenrod;
   text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black, 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black;
 }
 
@@ -33,14 +35,19 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  border: 4px solid yellow;
+  border: 4px solid black;
   background-color: rgba(255, 255, 255, 0.226);
   border-radius: 10%;
   text-align: center;
   top: 453px;
   font-size: 2.2rem;
   padding: 10px;
-  
+  text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black, 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black;
+  padding: 10px;
+}
+
+.about {
+  color: white;
 }
 
   .about:hover {

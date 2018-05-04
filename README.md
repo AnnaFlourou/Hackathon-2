@@ -1,13 +1,9 @@
-# About
+# About the project 
+Tech Your Future is the most important event of the year regarding dev championship! The challenge deals with a meeting of dev teams selected from the best schools all over the world. These dev teams are going to contend with oher countries in order to promote sustainable development. The teams will have to elaborate digital solution (web / mobile app, connected items, smart device) in order to improve the world of tomorrow.
 
-Tech Your Future is the most important event of the year regarding dev championship! The challenge deals with a meeting of dev teams selected from the best schools all over the world. These dev teams are going to contend with oher countries in order to promote sustainable development.
-      The teams will have to elaborate digital solution (web / mobile app, connected items, smart device) in order to improve the world of tomorrow.
-    
-  3 days = 3 themes = 3 challenges
-  *User interface 
-  *Admin interface
-  
-  project tasks : https://docs.google.com/document/d/1F6XKodl_1kgdTapHItylWHSpg8CX58MfMVdrHYq_KYk/edit?usp=sharing 
+3 days = 3 themes = 3 challenges *User interface *Admin interface
+
+project tasks : https://docs.google.com/document/d/1F6XKodl_1kgdTapHItylWHSpg8CX58MfMVdrHYq_KYk/edit?usp=sharing
 
 # Angular Full Stack  
 

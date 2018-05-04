@@ -1,0 +1,22 @@
+
+.team {
+    margin: 15px 0px;
+}
+
+.teamTable {
+    width: 300px;
+    border: 1px black solid;
+}
+
+.teamTable td, th {
+    border: 1px solid black;
+}
+
+.teamTable tr:nth-child(odd) {
+    background-color: white;
+}
+
+.teamTable tr:nth-child(even) {
+    background-color: grey;
+}
+ 

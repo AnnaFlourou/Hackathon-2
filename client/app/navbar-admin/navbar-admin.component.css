@@ -1,4 +1,8 @@
-.allNav{
-    border-radius: 8px;
-    
+.classBarAdmin {
+    margin-bottom: 20px;
+}
+
+.allNav {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }

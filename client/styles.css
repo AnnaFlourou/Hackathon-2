@@ -1,11 +1,19 @@
-/*azerty*/
+
+* {
+  font-family: 'PT Serif', serif;
+}
+
 html {
   overflow: hidden;
 }
+
 body {
   padding: unset;
   margin: unset;
+  background-image: url(http://sfwallpaper.com/images/black-and-green-backgrounds-6.jpg);
+  background-attachment: fixed;
 }
-.fontDefault {
-  font-family: 'PT Serif', serif;
+
+.titlef {
+  font-family: 'Fredericka the Great', cursive;
 }

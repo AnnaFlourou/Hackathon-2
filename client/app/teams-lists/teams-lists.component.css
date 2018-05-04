@@ -1,0 +1,42 @@
+.title {
+    color: white;
+    margin-bottom: 5%;
+    font-weight: bold;
+
+}
+
+.team {
+    margin: 15px 0px;
+}
+
+.teamTable {
+    width: 300px;
+    border: 1px black solid;
+}
+
+.teamTable td, th {
+    border: 1px solid black;
+}
+
+.teamTable th {
+    background-color: yellowgreen;
+}
+
+.teamTable tr:nth-child(odd) {
+    background-color: white;
+}
+
+.teamTable tr:nth-child(even) {
+    background-color: rgb(204, 195, 195);
+}
+
+.country {
+    color: rgb(1, 1, 160)
+}
+
+.flag {
+    margin-left: 2%;
+    margin-bottom: 1%;
+    width: 6%;
+    height: 4%;
+}

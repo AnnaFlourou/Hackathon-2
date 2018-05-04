@@ -22,21 +22,23 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
 import { ProgramComponent } from './program/program.component';
 import { ResultsComponent } from './results/results.component';
+import { DayAdminComponent } from './day-admin/day-admin.component';
 
 const routes: Routes = [
   // Private Routes
-  { path: 'homeAdmin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
+  { path: 'homeAdmin', component: HomeAdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'teams', component: TeamsComponent, canActivate: [AuthGuardAdmin] },
   { path: 'score-admin', component: ScoringAdminComponent, canActivate: [AuthGuardAdmin] },
+  { path: 'day-admin', component: DayAdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'program', component: ProgramComponent },
-  { path: 'results', component: ResultsComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
 
   // Public Routes
   { path: '', component: HomeComponent },
+  { path: 'results', component: ResultsComponent },
+  { path: 'program', component: ProgramComponent },
   { path: 'teamsLists', component: TeamsListsComponent },
   { path: 'sponsor', component: SponsorComponent },
   { path: 'organizer', component: OrganizerComponent },
@@ -45,7 +47,7 @@ const routes: Routes = [
   { path: 'carousel', component: CarouselComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'notfound', component: NotFoundComponent },
-  { path: '**', redirectTo: '/notfound' }
+  { path: '**', redirectTo: '/notfound' },
 ];
 
 @NgModule({

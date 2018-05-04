@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { Router } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit {
 
@@ -14,6 +13,6 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
   }
   click() {
-  this.router.navigate(['about']);
+    this.router.navigate(['about']);
   }
 }

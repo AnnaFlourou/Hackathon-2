@@ -5,10 +5,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  position = 'open';
+  position = 'Menu';
   buttonMenu = 'but0';
   menu = 'invisible';
   route;
@@ -17,12 +17,12 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
   pos() {
-    if (this.position == 'open') {
-      this.position = 'closed';
+    if (this.position === 'Menu') {
+      this.position = 'Close';
       this.buttonMenu = 'but1';
       this.menu = 'visible';
     } else {
-      this.position = 'open';
+      this.position = 'Menu';
       this.buttonMenu = 'but0';
       this.menu = 'invisible';
     }

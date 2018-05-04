@@ -6,6 +6,7 @@ const teamSchema = new mongoose.Schema({
   country: String,
   school: String,
   members: [],
+  flag: String,
 });
 const teamModel = mongoose.model('team', teamSchema);
 

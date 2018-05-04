@@ -3,6 +3,7 @@ import * as express from 'express';
 import UserController from './controllers/UserController';
 import TeamController from './controllers/TeamController';
 import ScoreController from './controllers/ScoreController';
+import DayController from './controllers/DayController';
 // import cat from './models/cat';
 // import user from './models/user';
 
@@ -13,6 +14,15 @@ export default function routes(app) {
   const user = new UserController();
   const team = new TeamController();
   const score = new ScoreController();
+  const day = new DayController();
+
+  // day
+  router.route('/days').get(day.getAll);
+  router.route('/days/count').get(day.count);
+  router.route('/day').post(day.insert);
+  router.route('/day/:id').get(day.get);
+  router.route('/day/:id').put(day.update);
+  router.route('/day/:id').delete(day.delete);
 
   // score
   router.route('/scores').get(score.getAll);

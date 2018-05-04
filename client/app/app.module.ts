@@ -29,6 +29,8 @@ import { SponsorComponent } from './sponsor/sponsor.component';
 import { OrganizerComponent } from './organizer/organizer.component';
 import { ProgramComponent } from './program/program.component';
 import { ResultsComponent } from './results/results.component';
+import { DayAdminComponent } from './day-admin/day-admin.component';
+import { DayService } from './services/day.service';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -56,6 +58,7 @@ export function tokenGetter() {
     OrganizerComponent,
     ProgramComponent,
     ResultsComponent,
+    DayAdminComponent,
   ],
   imports: [
     RoutingModule,
@@ -74,6 +77,7 @@ export function tokenGetter() {
     UserService,
     TeamService,
     ScoreService,
+    DayService,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],

@@ -26,18 +26,18 @@ import { DayAdminComponent } from './day-admin/day-admin.component';
 
 const routes: Routes = [
   // Private Routes
-  { path: 'homeAdmin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
+  { path: 'homeAdmin', component: HomeAdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'teams', component: TeamsComponent, canActivate: [AuthGuardAdmin] },
   { path: 'score-admin', component: ScoringAdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'day-admin', component: DayAdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'results', component: ResultsComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
-
+  
   // Public Routes
   { path: '', component: HomeComponent },
+  { path: 'results', component: ResultsComponent },
   { path: 'program', component: ProgramComponent },
   { path: 'teamsLists', component: TeamsListsComponent },
   { path: 'sponsor', component: SponsorComponent },

@@ -6,6 +6,11 @@ body {
   padding: unset;
   margin: unset;
 }
-.fontDefault {
+* {
   font-family: 'PT Serif', serif;
+}
+
+.titlef{
+  font-family: 'Fredericka the Great', cursive;
+
 }

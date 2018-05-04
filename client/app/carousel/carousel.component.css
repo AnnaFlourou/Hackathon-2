@@ -1,7 +1,9 @@
 .title {
   position: relative;
 }
-
+.titlef{
+  font-size: 10rem;
+}
 .p {
   z-index: 101;
   position: absolute;
@@ -9,7 +11,9 @@
   transform: translate(-50%);
   width: 100%;
   text-align: center;
-  top: 50px;
+  top: 255px;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .tewt {
@@ -20,7 +24,7 @@
   width: 100%;
   text-align: center;
   top: 0px;
-  color: rgb(113, 248, 248);
+  color: /*rgb(113, 248, 248)*/ yellow;
   text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black, 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black;
 }
 
@@ -29,18 +33,23 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  border: 1px solid;
+  border: 4px solid yellow;
+  background-color: rgba(255, 255, 255, 0.226);
+  border-radius: 10%;
   text-align: center;
-  top: 100px;
+  top: 453px;
+  font-size: 2.2rem;
+  padding: 10px;
+  
 }
 
   .about:hover {
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-  outline-color: rgba(255, 255, 255, 0);
+  /*box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);*/
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388; 
-  color: white;
+  /*color: white;*/
 }
 
 .widthCarousel {
@@ -55,4 +64,20 @@
 .heightImg {
   height: 100vh;
   width: auto;
+}
+
+.day{
+  font-size: 4rem;
+  padding-bottom: 36px;
+  text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black, 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black;
+  
+}
+
+.eventText{
+  font-size: 3.2rem;
+  padding-bottom: 58px;
+  font-weight: bold;
+
+
+
 }

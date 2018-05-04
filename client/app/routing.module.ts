@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
-  
+
   // Public Routes
   { path: '', component: HomeComponent },
   { path: 'results', component: ResultsComponent },

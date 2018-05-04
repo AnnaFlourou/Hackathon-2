@@ -1,19 +1,19 @@
 <app-menu></app-menu>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-12">
             <div style="text-align: center">
-                <h1>Tech your Futur</h1>
+                <h1 class="title">Tech your Futur</h1>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-4" *ngIf="days >= 1">
-            <table class="scoreTable">
+        <div class="col-4 mx-auto" *ngIf="days >= 1">
+            <table class="scoreTable mx-auto">
                 <tr>
-                    <th>Day 1</th>
+                    <th class="text-center">Day 1</th>
                 </tr>
                 <tr *ngFor="let score of scores">
                     <td>{{ score.name }}</td>
@@ -21,10 +21,10 @@
                 </tr>
             </table>
         </div>
-        <div class="col-4" *ngIf="days >= 2">
-            <table class="scoreTable">
+        <div class="col-4 mx-auto" *ngIf="days >= 2">
+            <table class="scoreTable mx-auto">
                 <tr>
-                    <th>Day 2</th>
+                    <th class="text-center">Day 2</th>
                 </tr>
                 <tr *ngFor="let score of scores">
                     <td>{{ score.name }}</td>
@@ -32,10 +32,10 @@
                 </tr>
             </table>
         </div>
-        <div class="col-4" *ngIf="days >= 3">
-            <table class="scoreTable">
+        <div class="col-4 mx-auto" *ngIf="days >= 3">
+            <table class="scoreTable mx-auto">
                 <tr>
-                    <th>Day 3</th>
+                    <th class="text-center">Day 3</th>
                 </tr>
                 <tr *ngFor="let score of scores">
                     <td>{{ score.name }}</td>

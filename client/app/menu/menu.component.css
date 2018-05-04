@@ -2,6 +2,11 @@
     height: 15%;
     width: 15%;
 }
+
+a {
+    font-size: 1.3rem;
+    font-weight: bold
+}
 /* .nav-menu {
     width: 20%;
     min-width: 250px;

@@ -1,7 +1,10 @@
 .title {
-    color: white;
+    color: black;
     margin-bottom: 5%;
     font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 0px 2px yellow, 2px 0px yellow, 0px -2px yellow, -2px 0px yellow, 2px 2px yellow, 2px -2px yellow, -2px -2px yellow, -2px 2px yellow;
+    
 }
 
 .description {

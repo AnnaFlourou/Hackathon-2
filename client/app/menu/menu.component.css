@@ -9,3 +9,7 @@ li>a {
     font-weight: bold;
     text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black, 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black;
 }
+
+.socialImage {
+    margin-right: 5px;
+}

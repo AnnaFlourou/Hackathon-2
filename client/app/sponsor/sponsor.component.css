@@ -1,5 +1,14 @@
 .title {
     color: white;
     font-weight: bold;
+    margin-bottom: 5%;
+}
 
+.sponsor {
+    /* height: 25%; */
+    max-width: 80%;
+}
+
+.vcenter {
+margin-top: 15%
 }

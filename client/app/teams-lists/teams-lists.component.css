@@ -12,11 +12,25 @@
     border: 1px solid black;
 }
 
+.teamTable th {
+    background-color: rgb(228, 178, 113);
+}
+
 .teamTable tr:nth-child(odd) {
     background-color: white;
 }
 
 .teamTable tr:nth-child(even) {
-    background-color: grey;
+    background-color: rgb(204, 195, 195);
 }
  
+.country {
+    color: blue
+}
+
+.flag {
+    margin-left: 2%;
+    margin-bottom: 1%;
+    width: 6%;
+    height: 4%;
+}

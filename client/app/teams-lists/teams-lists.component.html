@@ -1,4 +1,6 @@
-<div class="container-fluid">
+<app-menu></app-menu>
+
+<div class="container">
     <div class="row">
         <div class="col-12">
             <h1 class='text-center'>Tech your future</h1>
@@ -6,9 +8,9 @@
     </div> 
     <div class="row">
     <div class="col-3 team" *ngFor="let team of teams">
-        <table class="teamTable">
+        <table class="teamTable text-center">
             <tr>
-                <th>Team {{ team.name }}</th>
+                <th>Team {{ team.name }} - <span class="country">{{ team.country }}</span><img src="{{ team.flag }}" class="flag"></th>
             </tr>
             <tr *ngFor="let member of team.members">
                 <td>{{ member }}</td>

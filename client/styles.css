@@ -3,6 +3,10 @@
   font-family: 'PT Serif', serif;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   padding: unset;
   margin: unset;

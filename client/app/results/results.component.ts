@@ -3,6 +3,7 @@ import { ScoreService } from '../services/score.service';
 import { Score } from '../shared/models/score.model';
 import { DayService } from '../services/day.service';
 import { Day } from '../shared/models/day.model';
+import { ToastComponent } from '../shared/toast/toast.component';
 
 @Component({
   selector: 'app-results',

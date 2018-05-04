@@ -27,8 +27,8 @@
                     <th  colspan="2" class="text-center day">Day 2</th>
                 </tr>
                 <tr class="text-center teamName" *ngFor="let score of scores">
-                    <td>{{ score.name }}</td>
-                    <td>{{ score.scoreDay2 }}</td>
+                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.name }}</td>
+                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.scoreDay2 }}</td>
                 </tr>
             </table>
         </div>
@@ -38,8 +38,8 @@
                     <th  colspan="2" class="text-center day">Day 3</th>
                 </tr>
                 <tr class="text-center teamName" *ngFor="let score of scores">
-                    <td>{{ score.name }}</td>
-                    <td>{{ score.scoreDay3 }}</td>
+                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.name }}</td>
+                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.scoreDay3 }}</td>
                 </tr>
             </table>
         </div>

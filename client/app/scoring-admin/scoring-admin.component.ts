@@ -25,7 +25,9 @@ export class ScoringAdminComponent implements OnInit {
   projectDay2 = new FormControl('', Validators.required);
   scoreDay3 = new FormControl('', Validators.required);
   projectDay3 = new FormControl('', Validators.required);
-  status = new FormControl('', Validators.required);
+  status1 = new FormControl('', Validators.required);
+  status2 = new FormControl('', Validators.required);
+  status3 = new FormControl('', Validators.required);
 
   constructor(private scoreService: ScoreService,
               private formBuilder: FormBuilder,
@@ -42,7 +44,9 @@ export class ScoringAdminComponent implements OnInit {
       projectDay2: this.projectDay2,
       scoreDay3: this.scoreDay3,
       projectDay3: this.projectDay3,
-      status: this.status,
+      status1: this.status1,
+      status2: this.status2,
+      status3: this.status3,
     });
   }
 

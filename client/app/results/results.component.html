@@ -10,6 +10,9 @@
     </div>
 
     <div class="row all">
+        <div class="col-4 mx-auto score" *ngIf="days == 0">
+            <p class="text-center comming">COMMING SOON !</p>
+        </div>
         <div class="col-4 mx-auto score" *ngIf="days >= 1">
             <table class="scoreTable mx-auto">
                 <tr>
@@ -24,22 +27,22 @@
         <div class="col-4 mx-auto" *ngIf="days >= 2">
             <table class="scoreTable mx-auto">
                 <tr>
-                    <th  colspan="2" class="text-center day">Day 2</th>
+                    <th colspan="2" class="text-center day">Day 2</th>
                 </tr>
                 <tr class="text-center teamName" *ngFor="let score of scores">
-                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.name }}</td>
-                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.scoreDay2 }}</td>
+                    <td *ngIf="score.status1 == 'Pass' || score.status1 == 'pass'">{{ score.name }}</td>
+                    <td *ngIf="score.status1 == 'Pass' || score.status1 == 'pass'">{{ score.scoreDay2 }}</td>
                 </tr>
             </table>
         </div>
         <div class="col-4 mx-auto" *ngIf="days >= 3">
             <table class="scoreTable mx-auto">
                 <tr>
-                    <th  colspan="2" class="text-center day">Day 3</th>
+                    <th colspan="2" class="text-center day">Day 3</th>
                 </tr>
                 <tr class="text-center teamName" *ngFor="let score of scores">
-                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.name }}</td>
-                    <td *ngIf="score.status == 'Pass' || score.status == 'pass'">{{ score.scoreDay3 }}</td>
+                    <td *ngIf="score.status2 == 'Pass' || score.status2 == 'pass'">{{ score.name }}</td>
+                    <td *ngIf="score.status2 == 'Pass' || score.status2 == 'pass'">{{ score.scoreDay3 }}</td>
                 </tr>
             </table>
         </div>

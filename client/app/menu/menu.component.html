@@ -1,6 +1,6 @@
 <div class='nav-menu'>
 
-  <button (click)='pos()' class='linker {{ buttonMenu }}'>{{ position }}</button>
+  <button (click)='pos()' class='linker titlef {{ buttonMenu }}'>{{ position }}</button>
 
   <div id="accordion" class='{{ menu }}'>
     <div class="card">
@@ -14,7 +14,7 @@
     </div>
     <div class="card">
       <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
+        <h5 class="mb-0" style="text-align:center">
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Dev Contest
           </button>
@@ -37,7 +37,7 @@
 
     <div class="card">
       <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
+        <h5 class="mb-0" style="text-align:center">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             Teams dev
           </button>
@@ -46,13 +46,13 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
         <div class="card-body">
           <p class='linker'>
-            <a (click)='click("")'>Teams</a>
+            <a (click)='click("teamsLists")'>Teams</a>
           </p>
           <p class='linker'>
-            <a (click)='click("")'>Organizer</a>
+            <a (click)='click("organizer")'>Organizer</a>
           </p>
           <p class='linker'>
-            <a (click)='click("")'>Sponsor</a>
+            <a (click)='click("sponsor")'>Sponsor</a>
           </p>
         </div>
       </div>
@@ -60,21 +60,22 @@
 
     <div class="card">
       <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
+        <h5 class="mb-0" style="text-align:center">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              social networks
+            Social networks
           </button>
         </h5>
       </div>
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          
-            <a>Facebook</a>
+        <div class="card-body" style="text-align:center">
 
-            <a>LinkedIn</a>
-            
-            <a>Youtube</a>
-          
+
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" style="font-size:48px;color:green"></i></a>
+
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:48px;color:green"></i></a>
+
+          <a href="https://twitter.com/?lang=fr"target="_blank"><i class="fa fa-twitter-square" style="font-size:48px;color:green"></i></a>
+
         </div>
       </div>
     </div>

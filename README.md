@@ -6,6 +6,8 @@ Tech Your Future is the most important event of the year regarding dev champions
   3 days = 3 themes = 3 challenges
   *User interface 
   *Admin interface
+  
+  project tasks : https://docs.google.com/document/d/1F6XKodl_1kgdTapHItylWHSpg8CX58MfMVdrHYq_KYk/edit?usp=sharing 
 
 # Angular Full Stack  
 

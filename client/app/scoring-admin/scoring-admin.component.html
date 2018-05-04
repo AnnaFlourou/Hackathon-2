@@ -53,7 +53,7 @@
               <input class="form-control mr-2" type="number" name="scoreDay2" [(ngModel)]="score.scoreDay2" placeholder="Score Day2">
               <input class="form-control mr-2" type="text" name="projectDay3" [(ngModel)]="score.projectDay3" placeholder="Project Day3">
               <input class="form-control mr-2" type="number" name="scoreDay3" [(ngModel)]="score.scoreDay3" placeholder="Score Day3">
-              <input class="form-control mr-2" type="radio" name="status" [(ngModel)]="score.status" placeholder="Still in game">
+              <input class="form-control mr-2" type="text" name="status" [(ngModel)]="score.status" placeholder="Still in game">
               <button class="btn btn-sm btn-success mr-2" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
               <button class="btn btn-sm btn-warning" (click)="cancelEditing()"><i class="fa fa-times"></i> Cancel</button>
             </form>

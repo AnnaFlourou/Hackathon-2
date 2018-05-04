@@ -1,4 +1,8 @@
-.nav-menu {
+.logo {
+    height: 15%;
+    width: 15%;
+}
+/* .nav-menu {
     width: 20%;
     min-width: 250px;
     max-width: 300px;
@@ -45,14 +49,14 @@
     text-decoration: none !important;
     color: rgb(0, 183, 255);
 }
-.card-header {
+.card-header { */
     /*background-image:
     radial-gradient(
       circle,
     white,
     #99b82e
     ); */
-    border: 3px solid #99b82e;
+    /* border: 3px solid #99b82e;
 
 
 }
@@ -68,5 +72,5 @@
 
 .btn-link:hover {
 text-decoration: none !important;
-}
+} */
 
